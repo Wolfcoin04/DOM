@@ -1,0 +1,343 @@
+body {
+    font-weight: 400;
+    font-family:'Open Sans';
+    font-weight: 300;
+    letter-spacing: -0.3px;;
+    padding-top: 70px;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    background-image: url(/Ressources/logoleft.png), url(/Ressources/logoright.png), url(/Ressources/venom-cloth-logo-B36A850C44-seeklogo.com.png), url(/Ressources/venom-energy-logo-C691E26A58-seeklogo.com.png);
+    background-position: left top, right top, center , bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;  
+}
+
+.container{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color:white;
+    position: sticky;
+
+}
+
+.container1{
+    display: block;
+    margin: 0px auto;
+    border-radius: 0;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: auto;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 3px solid red;
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid red;
+  }
+
+
+.nav-wrap {
+  clear: both;
+  overflow: auto;
+  justify-content: center;
+  display: flex;
+}
+.nav-bar {
+  width: 80%;
+  border: 1px solid red;
+}
+.logo {
+  float: left;
+  line-height: 70px;
+  position: absolute;
+}
+.nav-list {
+  float: right;
+}
+ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-family: raleway;
+  position: sticky;
+  float: r;
+}
+
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-size: 5px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 50%;
+  }
+
+  .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  /* search */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create a column layout with Flexbox */
+  .row {
+    display: flex;
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 35%;
+    padding: 15px 0;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    flex: 65%;
+    padding: 15px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+  /* search */
+.searchcontainer{
+    display: block;
+}
+  /* search button */
+  .btnsearch {
+    background-color:transparent; 
+    border: none; 
+    padding: 12px 16px; 
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  /* Darker background on mouse-over */
+  .btnsearch:hover {
+    background-color: transparent;
+  }
+
+.colonne{
+    align-items: center;
+	background:transparent;
+	justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 2px 2px 2px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    animation: grow-and-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.colonne .text1 {
+    background: white;
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    font-family:'Open Sans';
+    font-size: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    color: black;
+    width: 30%;
+    Animation-delay : 6s;
+    Animation-duration : 5s;
+    Animation-iteration-count : infinite;
+    animation-name: fade;
+}
+.colonne .text2 {
+    background: white;
+    z-index: 1;
+    position: absolute;
+    text-align: right;
+    font-family:'Open Sans';
+    font-size: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    color: black;
+    width: 30%;
+    Animation-delay : 6s;
+    Animation-duration : 5s;
+    Animation-iteration-count : infinite;
+    animation-name: fade;
+}
+
+
+.containerdiv {
+    display: inline-block;
+    position: relative;
+    animation: slide-in 1000ms;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+    
+}
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+.containerdiv .text {
+    background: white;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family:'Open Sans';
+    font-size: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    color: black;
+    width: 70%;
+    Animation-delay : 6s;
+    Animation-duration : 5s;
+    Animation-iteration-count : infinite;
+    animation-name: fade;
+
+}
+@keyframes fade {
+    From {
+      Opacity : 0.25;
+    }
+    To {
+      Opacity : 0.5;
+    }
+  }
+
+
+
+
+
+  @keyframes grow-and-shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
